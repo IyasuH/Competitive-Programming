@@ -1,6 +1,6 @@
 class Solution(object):
     
-    def inserSort(arr):
+    def inserSort(self, arr):
         # this method sorts and returns it using insert sort
         i=1
         while(i<len(arr)):
@@ -20,9 +20,8 @@ class Solution(object):
         :rtype: List[int]
         """
         indices=[]
-        sorted=insertSort(nums)
-        for x in sorted:
-            if target==x:
-                indices.append(sorted.index(x))
-        print(indices)
+        sorted=self.inserSort(nums)
+        for x in range(len(sorted)):
+            if target==sorted[x]:
+                indices.append(x)
         return indices
