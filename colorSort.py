@@ -6,11 +6,11 @@ class Solution(object):
         """
         i=1
         while(i<len(nums)):
-            temp = a[i]
+            temp = nums[i]
             j = i-1
-            while(j>=0 and a[j]>temp):
-                a[j+1] = a[j]
+            while(j>=0 and nums[j]>temp):
+                nums[j+1] = nums[j]
                 j-=1
-            a[j+1] = temp
+            nums[j+1] = temp
             i+=1
         return nums
